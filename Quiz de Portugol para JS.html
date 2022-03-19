@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>PROJETO QUIZ - De Portugol para Javascript</title>
+</head>
+ 
+<body>
+   <script>
+//VARIÁVEIS E ENTRADA
+       saldoInicial = 50;
+       carteira = 0;
+ 
+ 
+ 
+       start = parseInt(prompt("Digite 1 para começar ou digite 0 para encerrar o jogo."));
+       switch (start) {
+ 
+           case 1:
+ 
+       nome = prompt("Como você se chama?");
+       alert("Olá, " + nome + "! \nSeja bem vindo ao nosso Quiz! \nClique em OK para ler as regras do jogo.");
+       start = prompt("Você inicia o jogo com R$ 50 na carteira e tem a possibilidade de dobrar o seu saldo da carteira a cada acerto. \nCaso erre a questão, o seu saldo é reduzido pela metade. \nDigite 1 para iniciar o questionário. \nDigite '0' para encerrar o jogo.")
+ 
+       if (start == 1) {
+ 
+//PERGUNTA 1
+               Q1 = parseInt(prompt("1ª pergunta: \nQual cidade foi a primeira capital do Brasil? \n1 - Brasília \n2 - Rio de Janeiro \n3 - Salvador \n4 - São Paulo"));
+ 
+                   if (Q1 == 3) {
+                       carteira = saldoInicial *2;
+                       alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                      
+                   } else {
+                       carteira = saldoInicial / 2;
+                       alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                   }
+ 
+//PERGUNTA 2
+              
+               Q2 = parseInt(prompt("2ª pergunta: \nEm qual ano o Brasil foi descoberto pelos portugueses? \n\n1 - 1500 \n2 - 1492 \n3 - 1530 \n4 - 1565"));
+                  
+                   if (Q2 == 1) {
+                       carteira = carteira * 2;
+                       alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                   } else {
+                       carteira = carteira / 2;
+                       alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                   }
+ 
+//PERGUNTA 3
+              
+               Q3 = parseInt(prompt("3ª pergunta: \nEm que período da pré-história o fogo foi descoberto? \n1: Neolítico  \n2: Paleolítico \n3 - Idade dos Metais \n4 - Idade Média"));
+                  
+                   if (Q3 == 2) {
+                       carteira = carteira * 2;
+                       alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                   } else {
+                       carteira = carteira / 2;
+                       alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                   }
+ 
+//PERGUNTA 4
+              
+               Q4 = parseInt(prompt("4ª pergunta: \nAproximadamente, quanto tempo leva para a luz do Sol chegar à Terra?  \n\n1 - 11 minutos \n2 - 5 minutos \n3 - Imediatamente \n4 - 8 minutos"));
+                  
+                   if (Q4 == 4) {
+                       carteira = carteira * 2;
+                       alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                   } else {
+                       carteira = carteira / 2;
+                       alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                   }
+ //PERGUNTA 5
+              
+                Q5 = parseInt(prompt("5ª pergunta: \nQual é a maior região metropolitana do nordeste? \n1 - Região Metropolitana de Fortaleza \n2 - Região Metropolitana de Salvador \n3 - Região Metropolitana do Recife"));
+                  
+                  if (Q5 == 1) {
+                      carteira = carteira * 2;
+                      alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira / 2;
+                      alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                  }
+//PERGUNTA 6
+              
+                Q6 = parseInt(prompt("6ª pergunta: \nQual é a cor do S vermelho da Perdigão? \n\n1 - Branco \n2 - Vermelho \n3 - Não tem S em Perdigão \n4- Amarelo"));
+                  
+                  if (Q6 == 3) {
+                      carteira = carteira * 2;
+                      alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira / 2;
+                      alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                  } 
+//PERGUNTA 7
+              
+                Q7 = parseInt(prompt("7ª pergunta: \nO que a palavra 'legend' significa em português? \n\n1 - Legenda \n2 - História \n3 - Conto \n4 - Lenda"));
+                  
+                  if (Q7 == 4) {
+                      carteira = carteira * 2;
+                      alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira / 2;
+                      alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                  }
+//PERGUNTA 8
+              
+                Q8 = parseInt(prompt("8ª pergunta: \nQuem é o autor da frase 'Penso, logo existo.'? \n\n1 - Platão \n2 - Galileu Galilei \n3 - René Descartes \n 4-Sócrates"));
+                  
+                  if (Q8 == 3) {
+                      carteira = carteira * 2;
+                      alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira / 2;
+                      alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                  }                  
+//PERGUNTA 9
+              
+                Q9 = parseInt(prompt("9ª pergunta: \nQual é o menor país do mundo em extensão territorial? \n\n1 - San Marino \n2 - Vaticano \n3 - Belize \n4 - El Salvador"));
+                  
+                  if (Q9 == 2) {
+                      carteira = carteira * 2;
+                      alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira / 2;
+                      alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                  }
+//PERGUNTA 10
+              
+                Q10 = parseInt(prompt("10ª pergunta: \nEscolha a alternativa onde a palavra esteja escrita corretamente: \n\n1 - Meteorologia \n2 - Metereologia \n3 - Mereotologia \n4 - Mereteologia"));
+                  
+                  if (Q10 == 1) {
+                      carteira = carteira * 2;
+                      alert("VOCÊ ACERTOU! \nO seu saldo foi dobrado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira / 2;
+                      alert("Você errou. Seu saldo da carteira foi reduzido pela metade.");
+                  }
+
+                  
+                 desafiofinal = parseInt(prompt("DESAFIO FINAL! \nVocê tem a oportunidade de optar pelo desafio final. \nO seu saldo pode ser triplicado caso acerte a questão, porém caso erre, o seu saldo será zerado. \n\nCaso deseje continuar para o desafio final, aperte 1. \nCaso deseje encerrar com o saldo atual, aperte 0."));
+
+                   
+
+
+//PERGUNTA DESAFIO FINAL
+              
+                QDF = parseInt(prompt("Pergunta desafio final: \nQual é a montanha mais alta do Brasil? \n\n1 - Pico da Neblina \n2 - Monte Roraima \n3 - Pico da Bandeira \n4 - Pico 31 de março"));
+                  
+                  if (QDF == 1) {
+                      carteira = carteira * 3;
+                      alert("VOCÊ VENCEU O DESAFIO FINAL! \nO seu saldo foi triplicado. \nO seu saldo da carteira atual é: R$ " + carteira);
+                  } else {
+                      carteira = carteira - carteira;
+                      alert("Você perdeu o desafio final. Seu saldo da carteira foi zerado.");
+                  }                  
+
+       }
+    
+
+        else if (start == 0) {
+           alert("Jogo encerrado. Até a próxima, " + nome + ".")
+       break;
+       }
+ 
+       case 0: {
+           alert("Jogo encerrado.");
+       }
+ 
+   }
+
+   </script>
+ 
+ 
+</body>
+ 
+</html>
+
